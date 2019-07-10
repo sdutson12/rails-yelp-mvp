@@ -6,6 +6,6 @@ class Restaurant < ApplicationRecord
   validates :address, presence: true
   validates :category, inclusion: {
     in: Restaurant::CATS,
-    message: 'Not a valid category'
+    message: 'not a valid category'
   }
 end
